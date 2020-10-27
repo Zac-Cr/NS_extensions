@@ -8,7 +8,7 @@ function onload(){
         document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
         document.getElementById("inpt_custbody_bc_ordersource3").value="GHO";
         document.getElementById("custbody_bc_authorizationamount_formattedValue").value="1.00";
-        document.getElementById("getauth_fs").className="checkbox_ck";
+        document.getElementsByClassName("getauth_fs").className="checkbox_ck";
     }
 }
 
