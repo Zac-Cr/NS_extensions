@@ -11,3 +11,5 @@ function onload(){
         document.getElementById("getauth_fs").className="checkbox_ck";
     }
 }
+
+console.log("Content script JS call")
