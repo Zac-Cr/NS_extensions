@@ -25,7 +25,6 @@ function onload(){
         else{
             source = "3";
         }
-        if()
             
         // document.getElementById("indx_custbody_bc_ordersource3").value="5";
         // document.getElementById("custbody_bc_authorizationamount_formattedValue").value="1.00";
