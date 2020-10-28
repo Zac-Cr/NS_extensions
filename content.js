@@ -1,5 +1,9 @@
-windowa.addEventListener("load", onload);
+// window.addEventListener("load", onload);
+document.addEventListener("load", onload);
 
+// chrome.runtime.onMessage.addListener(function(response,sender,sendResponse){
+//     alert(response);
+// });
 function onload(){
     
     var category = document.getElementById("input_custbody_bc_websitecategory2");
@@ -10,6 +14,7 @@ function onload(){
         document.getElementById("custbody_bc_authorizationamount_formattedValue").value="1.00";
         document.getElementById("getauth_fs").className="checkbox_ck";
     }
+    console.log("function onload call")
 }
 
 console.log("Content script JS call")
