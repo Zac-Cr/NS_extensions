@@ -6,7 +6,7 @@ setTimeout(onload);
 // });
 function onload(){
     
-    var category = document.getElementById("input_custbody_bc_websitecategory2").value;
+    var category = document.getElementById("inpt_custbody_bc_websitecategory2").value;
     var changedCategory = "MotoSport";
     var source = document.getElementById("indx_custbody_bc_websitecategory2").value;
     var changeSource = "3";
