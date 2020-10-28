@@ -1,6 +1,6 @@
 // window.addEventListener("load", onload);
-document.addEventListener("click", onload);
-
+// document.addEventListener("click", onload);
+setTimeout(onload);
 // chrome.runtime.onMessage.addListener(function(response,sender,sendResponse){
 //     alert(response);
 // });
