@@ -1,5 +1,8 @@
 // window.addEventListener("load", onload);
-document.addEventListener("click", onload); 
+// document.addEventListener("click", onload); 
+
+setTimeout(onload(),10000);
+
 function SetCatnSource(){
     
     document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
