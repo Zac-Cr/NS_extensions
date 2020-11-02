@@ -1,6 +1,6 @@
 // window.addEventListener("load", onload);
 document.addEventListener("click", onload); 
-function onload(){
+function SetCatnSource(){
     
     document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
     document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
