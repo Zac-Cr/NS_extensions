@@ -1,7 +1,7 @@
 // window.addEventListener("load", onload);
 // document.addEventListener("click", onload); 
 
-setTimeout(onload(),10000);
+setTimeout(SetCatnSource(),10000);
 
 function SetCatnSource(){
     
