@@ -1,15 +1,14 @@
-// window.addEventListener("load", onload);
-// document.addEventListener("click", onload); 
 
 setTimeout(SetCatnSource(),15000);
 
+
+
+// Set Catelog to Motosport, Source to GHO, Shipping to Standard, 
+// Fee to 0, Auth amount to 1, and check the get auth button
 function SetCatnSource(){
 
-    console.log(document.getElementById("inpt_custbody_bc_websitecategory2").value)
-    if(document.getElementById("inpt_custbody_bc_websitecategory2").value != "MotoSport"){
-        console.log("null call")
-    }
-    // checks on edit or not
+    // check to see if new order or not
+    if(Cat != "MotoSport" || Cat != "Backcountry"){
         // Set catalog
         document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
         document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
@@ -30,7 +29,8 @@ function SetCatnSource(){
         // set amount to free
         document.getElementById("shippingcost_formattedValue").value="0.00";
         document.getElementById("shippingcost").value="0.00";   
-    console.log("function onload call")
-};
+    }
+        console.log("function onload call")
+    };
 
 console.log("Content script JS call")
