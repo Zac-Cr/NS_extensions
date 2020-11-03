@@ -6,7 +6,7 @@ setTimeout(SetCatnSource(),15000);
 function SetCatnSource(){
 
     console.log(document.getElementById("inpt_custbody_bc_websitecategory2").value)
-    if(document.getElementById("inpt_custbody_bc_websitecategory2").value == undefined){
+    if(document.getElementById("inpt_custbody_bc_websitecategory2").value != "MotoSport"){
         console.log("null call")
     }
     // checks on edit or not
