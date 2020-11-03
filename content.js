@@ -16,7 +16,7 @@ function SetCatnSource(){
     // Set auth amount
     document.getElementById("custbody_bc_authorizationamount_formattedValue").value="1.00";
     // not working yet
-    document.querySelector("checkbox").checked="true";
+    document.querySelector("checkbox").checked=true;
     document.getElementById("getauth_fs").className="checkbox_ck";
     console.log("function onload call")
 };
