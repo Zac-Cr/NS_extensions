@@ -6,7 +6,6 @@ setTimeout(SetCatnSource(),15000);
 function SetCatnSource(){
 
     // checks on edit or not
-    if(document.getElementById("inpt_custbody_bc_websitecategory2").value != "MotoSport" || document.getElementById("inpt_custbody_bc_websitecategory2").value != "Backcountry"){
         // Set catalog
         document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
         document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
@@ -26,13 +25,7 @@ function SetCatnSource(){
         document.getElementById("indx_shipmethod11").value="4";
         // set amount to free
         document.getElementById("shippingcost_formattedValue").value="0.00";
-        document.getElementById("shippingcost").value="0.00";
-        console.log("Null call");
-    }
-    else{
-        console.log("cat and source are defined");
-    }    
-        
+        document.getElementById("shippingcost").value="0.00";   
     console.log("function onload call")
 };
 
