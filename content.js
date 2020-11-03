@@ -6,7 +6,7 @@ setTimeout(SetCatnSource(),15000);
 function SetCatnSource(){
 
     // checks on edit or not
-    if(document.getElementById("inpt_custbody_bc_websitecategory2".value == null)){
+    if(document.getElementById("inpt_custbody_bc_websitecategory2".value == "")){
         // Set catalog
         document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
         document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
