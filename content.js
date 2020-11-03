@@ -5,6 +5,7 @@ setTimeout(SetCatnSource(),15000);
 
 function SetCatnSource(){
 
+    console.log("inpt_custbody_bc_websitecategory2".value)
     // checks on edit or not
         // Set catalog
         document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
