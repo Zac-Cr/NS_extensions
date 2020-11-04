@@ -7,6 +7,7 @@ setTimeout(SetCatnSource(),15000);
 // Fee to 0, Auth amount to 1, and check the get auth button
 function SetCatnSource(){
 
+    var Cat = document.getElementById("inpt_custbody_bc_websitecategory2").value;
     // check to see if new order or not
     if(Cat != "MotoSport" || Cat != "Backcountry"){
         // Set catalog
