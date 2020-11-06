@@ -30,8 +30,11 @@ function SetCatnSource(){
         // set amount to free
         document.getElementById("shippingcost_formattedValue").value="0.00";
         document.getElementById("shippingcost").value="0.00";   
+        // open notes
+        document.getElementById("newhist").click();
     }
         console.log("function onload call")
     };
 
 console.log("Content script JS call")
+
