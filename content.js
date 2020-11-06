@@ -35,7 +35,6 @@ function SetCatnSource(){
             
     }
     catch{
-        break
     };
 };
 
@@ -45,7 +44,6 @@ function OrderNotes(){
         document.getElementById("newhist").click();
     }
     catch{
-        break
     };
     console.log("Notes click");
 };
