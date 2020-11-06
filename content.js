@@ -40,8 +40,9 @@ function SetCatnSource(){
 
 function OrderNotes(){
     try{
-
+        document.getElementById("tr_newhist").className="tabBnt bntBgt";
         document.getElementById("newhist").click();
+        document.getElementById("tdbody_newhist").click();
     }
     catch{
     };
