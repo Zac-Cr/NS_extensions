@@ -32,11 +32,9 @@ function SetCatnSource(){
         document.getElementById("shippingcost").value="0.00";   
 
     }
-    else{
-        document.getElementById("newhist").click();
-    }
-        console.log("function onload call")
-    };
+};
 
-console.log("Content script JS call")
-
+function OrderNotes(){
+    document.getElementById("newhist").click();
+    console.log("Notes click");
+};
