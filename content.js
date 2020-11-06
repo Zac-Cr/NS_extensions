@@ -1,6 +1,6 @@
 
 setTimeout(SetCatnSource(),15000);
-
+setTimeout(OrderNotes(),5000);
 
 
 // Set Catelog to Motosport, Source to GHO, Shipping to Standard, 
