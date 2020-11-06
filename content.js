@@ -39,11 +39,8 @@ function SetCatnSource(){
 };
 
 function OrderNotes(){
-    try{
-        document.getElementById("tr_newhist").className="tabBnt bntBgt";
-        nlOpenWindow('/app/crm/common/note.nl?l=T&refresh=usernotes&perm=TRAN_SALESORD&transaction=132777232&_ts='+(new Date).getTime(), 'newnote','width=640,height=640,resizable=yes,scrollbars=yes'); return false; 
-    }
-        catch{
-    };
+    document.getElementById("tr_newhist").className="tabBnt";
+    document.getElementById("newhist").click();
     console.log("Notes click");
+
 };
