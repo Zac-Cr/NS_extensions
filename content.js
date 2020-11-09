@@ -45,6 +45,8 @@ function OrderNotes(){
         document.getElementById("newhist").click();
         console.log("Notes click");
         _mousedown="F";
+        _mousedown="T";
+        _mousedown="F";
     }
     catch{
     }
