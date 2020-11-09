@@ -44,6 +44,7 @@ function OrderNotes(){
         document.getElementById("tr_newhist").className="tabBnt";
         document.getElementById("newhist").click();
         console.log("Notes click");
+        _mousedown="F";
     }
     catch{
     }
