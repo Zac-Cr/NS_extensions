@@ -39,8 +39,13 @@ function SetCatnSource(){
 };
 
 function OrderNotes(){
-    document.getElementById("tr_newhist").className="tabBnt";
-    document.getElementById("newhist").click();
-    console.log("Notes click");
+    try{
+
+        document.getElementById("tr_newhist").className="tabBnt";
+        document.getElementById("newhist").click();
+        console.log("Notes click");
+    }
+    catch{
+    }
 
 };
