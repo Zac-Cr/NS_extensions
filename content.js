@@ -5,6 +5,7 @@ var secondinpt= "";
 // Fee to 0, Auth amount to 1, and check the get auth button
 function SetCatnSource(){
     var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
+    console.log(Cat);
     try{
 
         // check to see if new order or not
@@ -139,5 +140,3 @@ var messages={
     "backorder" : `The items that are left are on a backorder. The estimated date of arrival from ${secondinpt} is ${firstinpt}. `,
     "aut" : `Sorry that you seem to have 2 charges on your account. The first charge that you see that is a few cents more then the total amount was the authorization made to make sure the card was good. Due to legal reasons we cannot take the money out of the account until the product is leaving our warehouse on its way to you. Because of this, you will see a second charge that will match the original total of the order. The authorization that was placed when the order was submitted will then drop off your account within a couple days of the items being shipped. If you order was sent in seperate shipments you will see a charge equal to the total of the items of that shipment.`,
 }
-console.log(Object.keys(messages)[0])
-console.log(messages['test'])
