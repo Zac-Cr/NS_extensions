@@ -6,13 +6,21 @@
     "content_scripts":[
       {
         "matches":["<all_urls>"],
-        "js":["content.js", "canned.js"]
+        "js":["content.js"],
+        "run_at": "document_end"
       }
     ],
+    "background":{
+      "scripts": ["popup.js"],
+      "persistent": false
+    },
+    "permissions": ["tabs","activeTab"],
     "browser_action": {
       "default_popup": "popup.html",
       "default_title": "Ns_extensions",
       "default_icon": "icon.png"
     },
-    "permissions": ["activeTab", "contectMenus"]
+    "externally_connectable":{
+      "matches": ["<all_urls>"]
+    }
   }

@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NS Extension</title>
-    <script src="popup.js"></script>
+    <title>NS Extension</title> 
+    <link rel="stylesheet" href="canned.css">  
 </head>
 <body>
-</body>
-
-</html>
+    <div class="body_wrapper">
+        <div class="header">
+            <img src="img/logo.png" alt="Backcountry">
+        </div>
+        <select name="rspns_list" id="rspns_list">
+            <option value="">---Select Response---</option>
+            <option value="rma_free">RMA Label</option>
+            <option value="auth">Authorization vs Capture</option>
+            <option value="rma_cust">Customer Charged RMA</option>
+            <option value="rma_stnd">6.99 Label</option>
+            <option value="backorder">Backorder</option>
+        </select>
+        
+        
+        <input type="text" id="rma" name="rma_number" class="hddn" placeholder="-----------------RMA #---------------">
+        <input type="text" id="label" name="label_link" class="hddn" placeholder="------------Label Link--------------">
+        <input type="text" id="bckorder" name="bckorder_date" class="hddn" placeholder="-------------Backorder Date-------------">
+        <input type="text" id="vendor"  name="vendor_name" class="hddn" placeholder="-------------Vendor--------------">
+        
+        
+        <button id="submit" class="hddn">Submit</button>
+        
+    </div>
+    </body>
+    <script src="popup.js"></script> 
+    </html>
