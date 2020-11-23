@@ -4,12 +4,16 @@ var secondinpt= "";
 // Set Catelog to Motosport, Source to GHO, Shipping to Standard, 
 // Fee to 0, Auth amount to 1, and check the get auth button
 function SetCatnSource(){
-    var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
-    console.log(Cat);
+    try{
+        var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
+    }
+    catch{
+        Cat = 'go';
+    }
     try{
 
         // check to see if new order or not
-        if(Cat != undefined){
+        if(Cat != 'go'){
             // Set catalog
             document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
             document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
