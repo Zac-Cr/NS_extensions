@@ -4,11 +4,11 @@ var secondinpt= "";
 // Set Catelog to Motosport, Source to GHO, Shipping to Standard, 
 // Fee to 0, Auth amount to 1, and check the get auth button
 function SetCatnSource(){
+    var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
     try{
 
-        var Cat = document.getElementById("inpt_custbody_bc_websitecategory2").value;
         // check to see if new order or not
-        if(Cat != "MotoSport" || Cat != "Backcountry"){
+        if(Cat != undefined){
             // Set catalog
             document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
             document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
@@ -84,7 +84,7 @@ function getmessage(){
         // find the classname or id tag for the email 
         document.getElementsByClassName("public-DraftStyleDefault-block").innerHTML = messages[selection]
         };
-        
+
     };
 };
 
