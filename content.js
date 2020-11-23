@@ -53,7 +53,7 @@ function OrderNotes(){
 
 
 setTimeout(OrderNotes(),5000);
-document.addEventListener("DOMContentLoaded",SetCatnSource);
+setTimeout(SetCatnSource(),5000);
 
 var receivedArray =[];
 
