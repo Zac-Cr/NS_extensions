@@ -1,6 +1,7 @@
 var messageArray=[];
 
 function changeinput(){ 
+  console.log("changed input")
   var rmainpt = document.getElementById("rma");
   var labelinpt = document.getElementById('label');
   var backinpt = document.getElementById('bckorder');
@@ -45,7 +46,7 @@ function getinputval(){
   messageArray.push(ext.value);
   var length = inpt.length;
    for(i=0; i < length; i++){
-    if(inpt[i].value != ""){
+    if(inpt[i].value != "" || inpt[i].value != undefined){
       messageArray.push(inpt[i].value);
       console.log("chromemessage if statement")
     };

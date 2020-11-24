@@ -55,24 +55,6 @@ function OrderNotes(){
 
 };
 
-
-setTimeout(OrderNotes(),5000);
-setTimeout(SetCatnSource(),5000);
-
-var receivedArray =[];
-
-chrome.runtime.onMessage.addListener(
-    function(message,sender,sendresponse){
-        if(message == "getmessage"){
-            getmessage();
-        }
-
-        console.log("message recieved");
-        receivedArray.push(message); 
-        console.log(receivedArray);   
-    }
-);
-
 function getmessage(){
     selection = receivedArray[0];
     switch(receivedArray.length){
@@ -144,3 +126,21 @@ var messages={
     "backorder" : `The items that are left are on a backorder. The estimated date of arrival from ${secondinpt} is ${firstinpt}. `,
     "aut" : `Sorry that you seem to have 2 charges on your account. The first charge that you see that is a few cents more then the total amount was the authorization made to make sure the card was good. Due to legal reasons we cannot take the money out of the account until the product is leaving our warehouse on its way to you. Because of this, you will see a second charge that will match the original total of the order. The authorization that was placed when the order was submitted will then drop off your account within a couple days of the items being shipped. If you order was sent in seperate shipments you will see a charge equal to the total of the items of that shipment.`,
 }
+
+setTimeout(OrderNotes(),5000);
+setTimeout(SetCatnSource(),5000);
+
+var receivedArray =[];
+
+chrome.runtime.onMessage.addListener(
+    function(message,sender,sendresponse){
+        if(message == "getmessage"){
+            getmessage();
+            console.log("getmessage called ")
+        }
+        console.log("message recieved");
+        receivedArray.push(message); 
+        console.log(receivedArray);   
+    }
+);
+
