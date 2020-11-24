@@ -59,6 +59,7 @@ function OrderNotes(){
 
 function getmessage(){
     selection = receivedArray[0];
+    console.log(selection)
     switch(receivedArray.length){
         case 2:
             firstinpt = receivedArray[1];
@@ -71,7 +72,7 @@ function getmessage(){
     for(i=0;Object.keys(messages).length; i++){
         if(selection == Object.keys(messages)[i]){
         // find the classname or id tag for the email 
-        document.getElementsByClassName("public-DraftStyleDefault-block").innerHTML = messages[selection]
+        document.getElementsByClassName("public-DraftStyleDefault-block")[0].innerText = messages[selection]
         };
 
     };

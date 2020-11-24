@@ -53,6 +53,7 @@ function getinputval(){
   };
   messageArray.push('getmessage');
   chromemessage();
+  console.log(messageArray);
 };
 
 function chromemessage(){
