@@ -6,14 +6,16 @@ var secondinpt= "";
 function SetCatnSource(){
     try{
         var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
+        console.log(Cat)
     }
     catch{
         Cat = 'go';
+        console.log(Cat)
     }
     try{
 
         // check to see if new order or not
-        if(Cat != 'go'){
+        if(Cat == 'go'){
             // Set catalog
             document.getElementById("inpt_custbody_bc_websitecategory2").value="MotoSport";
             document.getElementById("hddn_custbody_bc_websitecategory2").value="3";
@@ -144,3 +146,4 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
+console.log("content loaded")
