@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "content_scripts":[
       {
-        "matches":["<all_urls>", "desktop.cxengage.net/*"],
+        "matches":["<all_urls>" , "desktop.cxengage.net/*"],
         "js":["content.js"],
         "run_at": "document_end"
       }
@@ -17,7 +17,7 @@
     "permissions": ["tabs","activeTab"],
     "browser_action": {
       "default_popup": "popup.html",
-      "default_title": "Ns_extensions",
+      "default_title": "Ns_extensions"  ,
       "default_icon": "icon.png"
     },
     "externally_connectable":{
