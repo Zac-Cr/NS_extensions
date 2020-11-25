@@ -72,32 +72,20 @@ function getmessage(){
     for(i=0;Object.keys(messages).length; i++){
         if(selection == Object.keys(messages)[i]){
         // find the classname or id tag for the email 
-        document.getElementsByClassName("public-DraftStyleDefault-block")[0].innerText = messages[selection]
+        try{
+            console.log(messages[selection])
+            document.getElementsByClassName("public-DraftStyleDefault-block")[0].innerText = messages[selection]
+        }
+        catch{
+            console.log(messages[selection]);
+        }
         };
 
     };
 };
 
 var messages={
-    "rma_free" : `Hey!/n
-    /n
-    Return Number (RMA):${firstinpt}/n
-    /n
-    Label:${secondinpt}/n
-    /n
-    To return your order using our label, please write your RMA number on the outside of the package, print our UPS Return Label and drop your package at a UPS Facility or with a UPS Driver.
-    Please let us know if you are having any problems viewing this label, we can resend it in a different format. If you cannot print your label, either bring up your label on a smartphone for the UPS store to scan and print there, or forward this email directly to your UPS store./n
-    /n
-    Attention:/n
-    * Our labels only work with UPS/n
-    * This is a free and complimentary label/n
-    * Returns typically take 1-5 business days to process once they arrive back to us, although they can take longer during peak times/n
-    * Once your return has been processed, we will send you an email letting you know/n
-    /n    
-    The label has a tracking number included on it. Please note down this tracking number to keep track of your packages status!/n
-    /n
-    Thank you,
-    `,
+    "rma_free" : `hey`,
     "rma_cust" : `Hey!/n
     /n
     As stated in our return policy we do not pay for returns of an oversized item. The item you are trying to return is classified as oversized. If you would still like to return your product please get it shipped to/n
@@ -148,3 +136,21 @@ chrome.runtime.onMessage.addListener(
 );
 
 console.log("content loaded")
+// // Hey!/n
+// /n
+// Return Number (RMA):${firstinpt}/n
+// /n
+// Label:${secondinpt}/n
+// /n
+// To return your order using our label, please write your RMA number on the outside of the package, print our UPS Return Label and drop your package at a UPS Facility or with a UPS Driver.
+// Please let us know if you are having any problems viewing this label, we can resend it in a different format. If you cannot print your label, either bring up your label on a smartphone for the UPS store to scan and print there, or forward this email directly to your UPS store./n
+// /n
+// Attention:/n
+// * Our labels only work with UPS/n
+// * This is a free and complimentary label/n
+// * Returns typically take 1-5 business days to process once they arrive back to us, although they can take longer during peak times/n
+// * Once your return has been processed, we will send you an email letting you know/n
+// /n    
+// The label has a tracking number included on it. Please note down this tracking number to keep track of your packages status!/n
+// /n
+// Thank you,
