@@ -1,4 +1,4 @@
-
+// allows for the options to be chosen
 function changeinput(){ 
   var rmainpt = document.getElementById("rma");
   var labelinpt = document.getElementById('label');
@@ -98,8 +98,7 @@ function copyttext(){
   var copyText = document.createElement('textarea');
   copyText.value = coppiedtextglobal;
   copyText.setAttribute('id', "testing")
-  document.body.appendChild(copyText);
-  // copyText.style.display = 'none';
+  document.body.append(copyText);
   var coppied = document.getElementById('testing');
   
   /* Select the text field */
@@ -107,7 +106,8 @@ function copyttext(){
   coppied.setSelectionRange(0, 99999); /*For mobile devices*/
   
   /* Copy the text inside the text field */
-  document.execCommand("copy");
+  document.execCommand("Copy");
+  coppied.className= 'hddn';
 };
 
 var messageArray=[];
