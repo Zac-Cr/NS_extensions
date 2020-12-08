@@ -12,7 +12,7 @@
             <img src="img/logo.png" alt="Backcountry">
         </div>
         <select name="rspns_list" id="rspns_list">
-            <option value="">---Select Response---</option>
+            <option value="">Select Response</option>
             <option value="rma_free">RMA Label</option>
             <option value="auth">Authorization vs Capture</option>
             <option value="rma_cust">Customer Charged RMA</option>
@@ -21,14 +21,15 @@
         </select>
         
         
-        <input type="text" id="rma" name="rma_number" class="hddn" placeholder="-----------------RMA #---------------">
-        <input type="text" id="label" name="label_link" class="hddn" placeholder="------------Label Link--------------">
-        <input type="text" id="bckorder" name="bckorder_date" class="hddn" placeholder="-------------Backorder Date-------------">
-        <input type="text" id="vendor"  name="vendor_name" class="hddn" placeholder="-------------Vendor--------------">
-        
+        <input type="text" id="rma" name="rma_number" class="hddn" placeholder="RMA #">
+        <input type="text" id="label" name="label_link" class="hddn" placeholder="Label Link">
+        <input type="text" id="bckorder" name="bckorder_date" class="hddn" placeholder="Backorder Date">
+        <input type="text" id="vendor"  name="vendor_name" class="hddn" placeholder="Vendor">
         
         <button id="submit" class="hddn">Submit</button>
         
+
+        <H2 id="notice" class="hddn">Paste(Ctrl + v) the message into the desired location.</H2>
     </div>
     </body>
     <script src="popup.js"></script> 
