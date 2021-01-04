@@ -52,7 +52,7 @@ function startdscnt(){
     for( i=0; i < userinputs.length; i++){
         chrome.tabs.query(params,
             function gotTab(tabs){
-                chrome.tabs.sendMessage(tab.id, userinputs[i]);
+                chrome.tabs.sendMessage(tabs.id, userinputs[i]);
                 console.log("sent message")
             }
         );
