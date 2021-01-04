@@ -41,8 +41,9 @@ function startdscnt(){
         if(inputs[i].value != ""){
             userinputs.push(inputs[i].value);
         };
-        userinputs.push("go");
+        
     };
+    userinputs.push("go");
     console.log(userinputs);
     var params = {
         active :true,
