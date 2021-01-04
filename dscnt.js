@@ -29,7 +29,6 @@ function changeinput(){
     document.getElementById('submit_dsc').className='unhidden';
   };
 function startdscnt(){
-    var userinputs =[];
     var inputs = document.getElementsByTagName("input");
     var selection = document.getElementsByTagName("select");
     for( i = 0; i < selection.length; i++){
@@ -52,7 +51,7 @@ function startdscnt(){
     for( i=0; i < userinputs.length; i++){
         chrome.tabs.query(params,
             function gotTab(tabs){
-                chrome.tabs.sendMessage(tabs.id, userinputs[i]);
+                chrome.tabs.sendMessage(tabs[0].id, userinputs[i]);
                 console.log("sent message")
             }
         );
@@ -63,7 +62,7 @@ function startdscnt(){
 function message(){
 
 }
-  
+  var userinputs =[];
   var dscnt = document.getElementById("dscnt_list")
   dscnt.addEventListener("change",changeinput);
   document.getElementById("submit_dsc").addEventListener("click", startdscnt);
