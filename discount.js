@@ -20,8 +20,9 @@ function insertdscnt(text, dscnt){
 chrome.runtime.onMessage.addListener(
     function(message,sender,sendresponse){
         console.log("message recieved");
-        if(message == "go"){
+        if(message === "go"){
             insertdscnt(receivedArray[0], receivedArray[1]);
+            console.log("insert function amount");
         }
         receivedArray.push(message); 
         console.log(receivedArray);   
