@@ -23,22 +23,7 @@ function createenviron(){
 };
 
 
-chrome.runtime.onMessage.addListener(
-    function(message,sender,sendresponse){
-        if(message == "getmessage"){
-            createenviron();
-            console.log("getmessage called ")
-        }
-        console.log("message recieved");
-        receivedArray.push(message); 
-        console.log(receivedArray);   
-    }
-);
-
-
-
-
 // global declarations
-var receivedArray= []
+
 // Calling Check
 console.log("email.js")

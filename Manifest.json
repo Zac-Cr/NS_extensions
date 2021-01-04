@@ -11,7 +11,7 @@
       }
     ],
     "background":{
-      "scripts": ["popup.js"],
+      "scripts": ["popup.js", "dscnt.js"],
       "persistent": false
     },
     "permissions": ["tabs","activeTab", "clipboard", "clipboardRead", "clipboardWrite"],

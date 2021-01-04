@@ -9,6 +9,7 @@ body{
 }
 input{
   margin: 10px;
+  border: 75px;
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -37,7 +38,6 @@ option{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 #rspns_list{
     margin: 10px;
     text-align: left;
@@ -55,4 +55,30 @@ input::placeholder{
 }
 .unhidden{
     display: block;
+}
+/* Disount page */
+.links{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    color: white;
+}
+#dscnt_list{
+    margin: 10px;
+    text-align: left;
+}
+#rider_amnt{
+    margin: 10px;
+    text-align: left;
+}
+#business_amnt{
+    margin: 10px;
+    text-align: left;
+}
+#submit_dsc{
+    border: 35px;
 }

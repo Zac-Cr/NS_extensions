@@ -33,6 +33,7 @@ function changeinput(){
       }
   document.getElementById('submit').className='unhidden';
 };
+
 function getinputval(){
     document.getElementById('notice').className = 'unhidden';
     console.log("getinputval called")
@@ -119,3 +120,6 @@ var coppiedtextglobal = "";
 
 // sending array to chrom
 // https://stackoverflow.com/questions/56532745/how-do-i-send-an-array-from-a-content-script-to-a-popup-script
+
+
+//  

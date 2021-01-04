@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <link rel="stylesheet" href="canned.css">
+</head>
+<body>
+    <div class="body_wrapper">
+        <div class="header">
+            <img src="img/logo.png" alt="Backcountry">
+        </div>
+        <select name="dscnt_list" id="dscnt_list">
+            <option value="">Select Discount</option>
+            <option value="cust_sat">Customer Satisfaction</option>
+            <option value="milit">Military</option>
+            <option value="rider">Sponsored Rider</option>
+            <option value="b2b">B2B</option>
+        </select>
+        <select name="rider" id="rider_amnt" class="hddn">
+            <option value="">Select Amount</option>
+            <option value="rider10">10%</option>
+            <option value="rider15">15%</option>
+            <option value="rider20">20%</option>
+            <option value="rider25">25%</option>
+            <option value="rider30">30%</option>
+        </select>
+        <select name="business" id="business_amnt" class="hddn">
+            <option value="">Select Amount</option>
+            <option value="b2bsilv">Silver</option>
+            <option value="b2bgold">Gold</option>
+            <option value="b2bplat">Platinum</option>
+        </select>
+        <input type="text" id="cstm" class="hddn">
+        <input type="text" id="milit" class="hddn">
+        
+        <button id="submit_dsc" class="hddn">Submit</button>
+
+    </div>
+</body>
+<script src="dscnt.js"></script> 
+</html>
