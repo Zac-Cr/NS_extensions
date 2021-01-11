@@ -40,29 +40,24 @@ function startdscnt(){
         if(inputs[i].value != ""){
             userinputs.push(inputs[i].value);
         };
-        
     };
     userinputs.push("go");
     console.log(userinputs);
+    gettab();
+};
+function gettab(){
     var params = {
-        active :true,
-        currentWindow: true
-    };
-    for( i=0; i < userinputs.length; i++){
-        chrome.tabs.query(params,
-            function gotTab(tabs){
-                chrome.tabs.sendMessage(tabs[0].id, userinputs[i]);
-                console.log("sent message")
-            }
-        );
+        active: true,
+        currentWindow: true,
     }
-    
-}
+    chrome.tabs.query(params, passmessage);
+    function passmessage(tabs){
+        chrome.tabs.sendMessage(tabs[0].id, userinputs)
+    }
+};
 
-function message(){
 
-}
-  var userinputs =[];
-  var dscnt = document.getElementById("dscnt_list")
-  dscnt.addEventListener("change",changeinput);
-  document.getElementById("submit_dsc").addEventListener("click", startdscnt);
+var userinputs =[];
+var dscnt = document.getElementById("dscnt_list")
+dscnt.addEventListener("change",changeinput);
+document.getElementById("submit_dsc").addEventListener("click", startdscnt);

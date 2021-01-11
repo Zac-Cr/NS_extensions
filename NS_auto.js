@@ -20,6 +20,7 @@ function SetCatnSource(){
             document.getElementById("hddn_custbody_bc_ordersource3").value="5";
             document.getElementById("indx_custbody_bc_ordersource3").value="5";
             // Set auth amount
+            document.getElementById("custbody_bc_authorizationamount_formattedValue").click();
             document.getElementById("custbody_bc_authorizationamount_formattedValue").value="1.00";
             document.getElementById("custbody_bc_authorizationamount_formattedValue").innerHTML="1.00";
             document.getElementById("custbody_bc_authorizationamount_formattedValue").innerText="1.00";
