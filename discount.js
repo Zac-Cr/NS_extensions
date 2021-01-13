@@ -1,28 +1,25 @@
 function insertdscnt(text, dscnt){
-    var selection = document.getElementsByClassName("uir-machine-row");
+    var selection = document.getElementsByClassName("uir-machine-row-even");
     for(i=0; i = selection.length; i++){
         try{
-            var selection = document.getElementsByClassName("uir-machine-row-even");
             selection[i].children[2].click();
             document.getElementById("item_insert").click()
-            var dscnttitle = document.getElementById("item_item_display");
-            dscnttitle = text;
+            document.getElementById("item_item_display").click();
+            document.getElementById("item_item_display").value = text;
             runSearchitem()
             selection[i].children[4].click();
             document.getElementById("inpt_price6").value = "Custom";
             document.getElementById("indx_price6").value = '1';
             document.getElementById("hddn_price6").value = '-1';
+            document.getElementById("hddn_price6").onchange();
             var inputselec = selection[i].children[4].getElementsByTagName("input");
             inputselec[3].value = "Custom";
+            document.getElementById("hddn_price6").onchange();
             selection[1].children[5].click();
             document.getElementById('rate_formattedValue').value =  dscnt;
-            document.getElementById('rate').value = dscnt;
             document.getElementById('rate_formattedValue').onchange();
-
-
-
-
-            
+            document.getElementById('rate').onchange();
+          
         }
         catch{};   
     };
