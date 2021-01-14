@@ -18,8 +18,7 @@ function insertdscnt(text, dscnt){
             selection[1].children[5].click();
             document.getElementById('rate_formattedValue').value =  dscnt;
             document.getElementById('rate_formattedValue').onchange();
-            document.getElementById('rate').onchange();
-          
+            document.getElementById('rate').onchange();        
         }
         catch{};   
     };
