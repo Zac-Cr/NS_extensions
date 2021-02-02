@@ -26,13 +26,16 @@ function SetCatnSource(){
             document.getElementById("custbody_bc_authorizationamount").value = 1.00;
             document.getElementById("custbody_bc_authorizationamount").onchange();
             //get auth check
-            document.getElementById("getauth_fs_inp").checked=true;
-            document.getElementById("getauth_fs").className="checkbox_ck checkboximage";
+            document.getElementById("getauth_fs").className="checkbox_ck";
+            document.getElementById("getauth_fs").onclick();
+            document.getElementById("getauth_fs_inp").onclick();
+            document.getElementById("getauth_fs_inp").onchange();
+            document.getElementById("getauth_fs_inp").onkeypress();
             // set shipping method to standard
-            var str = document.getElementById("shipaddress").value;
-            document.getElementById("inpt_shipmethod11").value="4. Standard Delivery (Includes UPS MI)";
-            document.getElementById("hddn_shipmethod11").value="6087332";
-            document.getElementById("indx_shipmethod11").value="4";
+            document.getElementById("inpt_shipmethod11").value="UPS Ground";
+            document.getElementById("hddn_shipmethod11").value="6135455";
+            document.getElementById("indx_shipmethod11").value="15";
+            document.getElementById("hddn_shipmethod11").onchange();
             // set amount to free
 
             document.getElementById("shippingcost_formattedValue").value="0.00";
