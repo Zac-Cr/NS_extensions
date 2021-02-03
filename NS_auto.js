@@ -1,13 +1,5 @@
 function SetCatnSource(){
-    try{
-        var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
-        console.log(Cat)
-    }
-    catch{
-        Cat = 'go';
-        console.log(Cat)
-    }
-    try{
+    // try{
         // check to see if new order or not
         if(Cat == 'go'){
             // Set catalog
@@ -24,27 +16,26 @@ function SetCatnSource(){
             document.getElementById("custbody_bc_authorizationamount_formattedValue").innerHTML= 1.00;
             document.getElementById("custbody_bc_authorizationamount_formattedValue").innerText= 1.00;
             document.getElementById("custbody_bc_authorizationamount").value = 1.00;
-            document.getElementById("custbody_bc_authorizationamount").onchange();
             //get auth check
-            document.getElementById("getauth_fs").className="checkbox_ck";
-            document.getElementById("getauth_fs").onclick();
-            document.getElementById("getauth_fs_inp").onclick();
-            document.getElementById("getauth_fs_inp").onchange();
-            document.getElementById("getauth_fs_inp").onkeypress();
-            // set shipping method to standard
-            document.getElementById("inpt_shipmethod11").title="UPS Ground";
-            document.getElementById("hddn_shipmethod11").value="6135455";
-            document.getElementById("indx_shipmethod11").value="15";
-            document.getElementById("hddn_shipmethod11").onchange();
-            // set amount to free
-
-            document.getElementById("shippingcost_formattedValue").value="0.00";
-            document.getElementById("shippingcost").value="0.00";
+            document.getElementById("getauth_fs").click()
             };              
-        }     
-    catch{
-        console.log("Auto input error")
-    };  
+        // }     
+    // catch{
+    //     console.log("Auto input error")
+    // };  
+};
+
+function Setshipping(){
+    if(Cat== "go"){
+        document.getElementById("inpt_shipmethod11").title="UPS Ground";
+        document.getElementById("inpt_shipmethod11").value="UPS Ground";
+        document.getElementById("hddn_shipmethod11").value="6135455";
+        document.getElementById("indx_shipmethod11").value="15";
+        // set amount to free
+        document.getElementById("shippingcost_formattedValue").value="0.00";
+        document.getElementById("shippingcost").value="0.00";
+    }
+        console.log("this changed the shipping")
 };
 
 function OrderNotes(){
@@ -62,6 +53,15 @@ function OrderNotes(){
 
 };
 
+try{
+    var Cat = document.getElementsByClassName("uir-record-id")[0].innerHTML;
+    console.log(Cat)
+}
+catch{
+    Cat = 'go';
+    console.log(Cat)
+};
+document.getElementById("shippingtxt").addEventListener("click", Setshipping);
 setTimeout(OrderNotes(),5000);
 setTimeout(SetCatnSource(),5000);
 
