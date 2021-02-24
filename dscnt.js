@@ -3,8 +3,6 @@ function changeinput(){
     var militinpt = document.getElementById('milit');
     custinpt.className= "hddn";
     militinpt.className ="hddn";
-    document.getElementById("business_amnt").className ="hddn";
-    document.getElementById("rider_amnt").className ="hddn";
       switch(dscnt.value){
         case "cust_sat":
             custinpt.className= "unhidden";
@@ -12,18 +10,10 @@ function changeinput(){
         case 'milit':
             militinpt.className ="unhidden";
             break;
-        case 'rider':
-            document.getElementById("rider_amnt").className ="unhidden";
-            break;
-        case 'b2b':
-            document.getElementById("business_amnt").className ="unhidden"  
-            break;
         case '':
             document.getElementById('submit_dsc').className='hddn';
             document.getElementById("rider_amnt").value = "";
             document.getElementById("business_amnt").value = "";
-
-
             break;
         }
     document.getElementById('submit_dsc').className='unhidden';
