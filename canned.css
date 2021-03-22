@@ -80,5 +80,15 @@ input::placeholder{
     text-align: left;
 }
 #submit_dsc{
+    justify-content: center;
     border: 35px;
+}
+.button_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 0;
+
 }
