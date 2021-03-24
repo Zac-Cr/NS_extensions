@@ -4,8 +4,8 @@ function insertdscnt(text, dscnt){
         console.log(k);
             setTimeout(function(){setdscnttype(text,k,"uir-machine-row-even");},1);
             setTimeout(function(){setpricelvl(k,"uir-machine-row-even");},3000);
-            setTimeout(function(){setdscntamt(dscnt,k,"uir-machine-row-even");},4000);
-            setTimeout(function(){loopinit(text,dscnt);},5000); 
+            setTimeout(function(){setdscntamt(dscnt,k,"uir-machine-row-even");},5000);
+            setTimeout(function(){loopinit(text,dscnt);},6000); 
             
         };
 function loopinit(text, dscnt){
@@ -19,8 +19,8 @@ function loopinit(text, dscnt){
             var add = document.getElementsByClassName("uir-machine-row").length-2;
             document.getElementsByClassName("uir-machine-row")[add].click();
             setTimeout(function(){setdscnttype(text,add,"uir-machine-row");},1);
-            setTimeout(function(){setpricelvl(add,"uir-machine-row");},5000);
-            setTimeout(function(){setdscntamt(dscnt,add,"uir-machine-row");},7000);
+            setTimeout(function(){setpricelvl(add,"uir-machine-row");},3000);
+            setTimeout(function(){setdscntamt(dscnt,add,"uir-machine-row");},5000);
         };
 };
 
@@ -79,7 +79,7 @@ function getdiscount(){
     
 };
 var dsctdict ={
-    "cust_sat" : "DSCNT-GHO-CUST-DISCOUNT",
+    "cust_sat" : "DSCNT-GHO-CUST-SAT",
     "milit" : "DSCNT-GHO-MILITARY",
     "milit10" : "Military_10",
 }
