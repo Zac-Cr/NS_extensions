@@ -79,7 +79,7 @@ function getdiscount(){
     
 };
 var dsctdict ={
-    "cust_sat" : "DSCNT-GHO-CUST-SAT",
+    "cust_sat" : "DSCNT-GHO-CUST-DISCOUNT",
     "milit" : "DSCNT-GHO-MILITARY",
     "milit10" : "Military_10",
 }
