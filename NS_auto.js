@@ -1,3 +1,5 @@
+const eve = new Event("change");
+
 function SetCatnSource(){
     // try{
         // check to see if new order or not
@@ -19,7 +21,7 @@ function SetCatnSource(){
             //get auth check
             document.getElementById("getauth_fs").click()
             };              
-        // }     
+             
     // catch{
     //     console.log("Auto input error")
     // };  
@@ -32,11 +34,15 @@ function Setshipping(){
         document.getElementById("hddn_shipmethod11").value="6135455";
         document.getElementById("indx_shipmethod11").value="15";
         // set amount to free
-        document.getElementById("shippingcost_formattedValue").value="0.00";
         document.getElementById("shippingcost").value="0.00";
-    }
-        console.log("this changed the shipping")
+        document.getElementById("shippingcost").dispatchEvent(eve);
+        document.getElementById("shippingcost_formattedValue").value="0.00";
+        document.getElementById("shippingcost_formattedValue").dispatchEvent(eve);
+        console.log("this changed the shipping");
+    };
 };
+
+
 
 function OrderNotes(){
     try{
@@ -64,5 +70,4 @@ catch{
 document.getElementById("shippingtxt").addEventListener("click", Setshipping);
 setTimeout(OrderNotes(),5000);
 setTimeout(SetCatnSource(),5000);
-
 console.log("NS_auto loaded")
