@@ -87,7 +87,7 @@ function getinputval(){
     
     Thank you,\n`,
     "backorder" : `The items that are left are on a backorder. The estimated date of arrival from ${messageArray[2]} is ${messageArray[1]}. `,
-    "aut" : `Sorry that you seem to have 2 charges on your account. The first charge that you see that is a few cents more then the total amount was the authorization made to make sure the card was good. Due to legal reasons we cannot take the money out of the account until the product is leaving our warehouse on its way to you. Because of this, you will see a second charge that will match the original total of the order. The authorization that was placed when the order was submitted will then drop off your account within a couple days of the items being shipped. If you order was sent in seperate shipments you will see a charge equal to the total of the items of that shipment.`,
+    "auth" : `Sorry that you seem to have 2 charges on your account. The first charge that you see that is a few cents more then the total amount was the authorization made to make sure the card was good. Due to legal reasons we cannot take the money out of the account until the product is leaving our warehouse on its way to you. Because of this, you will see a second charge that will match the original total of the order. The authorization that was placed when the order was submitted will then drop off your account within a couple days of the items being shipped. If you order was sent in seperate shipments you will see a charge equal to the total of the items of that shipment.`,
 };
     coppiedtextglobal= messages[messageArray[0]];
     copyttext();
