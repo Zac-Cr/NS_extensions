@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canned.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body_wrapper">
+        <div class="header">
+            <img src="img/logo.png" alt="Backcountry">
+        </div>
+
+        <select name="msshp_lst" id="msshp_lst" class="selection">
+            <option value=""> Select Misship</option>
+            <option value="wrng">Wrong Item Sent</option>
+            <option value="shrt">Shortship</option>
+            <option value="ovr"> OverShip</option>
+            <option value="shplst">Shipper Lost</option>
+        </select>
+
+        <input type="text" id="orig_sale" placeholder="Original Sales Order" name="orig_sale" class="hddn">
+        <input type="text" id="repl_sale" placeholder="Replacement Sales Order" name="repl_sale" class="hddn">
+        <input type="text" id="return_auth" placeholder="Return Authorization" name="return_auth" class="hddn">
+
+        <div class="button_wrapper">
+            <button id="submit_mssh" class="hddn buttoncl">Submit</button>
+        </div>
+        
+        <H2 id="notice" class="hddn">Paste(Ctrl + v) the message into the desired location.</H2>
+
+    </div>
+</body>
+<script src="misship.js"></script>
+</html>

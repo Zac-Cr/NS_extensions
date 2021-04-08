@@ -4,17 +4,18 @@ function changeinput(){
       switch(dscnt.value){
         case "cust_sat":
             custinpt.className= "unhidden";
+            document.getElementById('submit_dsc').className='unhidden';
+
             break;
         case 'milit':
             custinpt.className ="unhidden";
+            document.getElementById('submit_dsc').className='unhidden';
+
             break;
         case '':
             document.getElementById('submit_dsc').className='hddn';
-            document.getElementById("rider_amnt").value = "";
-            document.getElementById("business_amnt").value = "";
             break;
         }
-    document.getElementById('submit_dsc').className='unhidden';
   };
 function startdscnt(){
     var inputs = document.getElementById("cstm").value;

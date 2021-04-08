@@ -1,4 +1,21 @@
 var k = 0;
+function insertmilitdscnt(text){
+    setTimeout(function(){setdscnttype(text,k,"uir-machine-row-even");},1);
+    setTimeout(function(){loopmilitinit(text);},3000);
+}
+function loopinit(text){
+    k++;
+    if(k < document.getElementsByClassName("uir-machine-row-even").length){
+        console.log("recalled"); 
+        insertmilitdscnt(text);  
+    }
+    else{
+        console.log("add final line")
+            var add = document.getElementsByClassName("uir-machine-row").length-2;
+            document.getElementsByClassName("uir-machine-row")[add].click();
+            setTimeout(function(){setdscnttype(text,add,"uir-machine-row");},1);
+        };
+};
 function insertdscnt(text, dscnt){  
         console.log("for loop");
         console.log(k);
@@ -70,17 +87,23 @@ function seprecieved(){
 };
 
 function getdiscount(){
-    var dscntamt = `-${parseArray[1]}%`;
-    console.log("get");
-    console.log(dscntamt);
-    var dsnttype = dsctdict[parseArray[0]];
-    console.log(dsnttype);
-    insertdscnt(dsnttype,dscntamt)
+    if(parseArray[0]=== "milit" && parseArray[1] == 10){
+        var dsnttype = dsctdict["milit10"];
+        insertmilitdscnt(dsctdict);
+    }
+    else{
+        var dscntamt = `-${parseArray[1]}%`;
+        console.log("get");
+        console.log(dscntamt);
+        var dsnttype = dsctdict[parseArray[0]];
+        console.log(dsnttype);
+        insertdscnt(dsnttype,dscntamt)
+    }
     
 };
 var dsctdict ={
     "cust_sat" : "DSCNT-GHO-CUST-DISCOUNT",
-    "milit" : "DSCNT-GHO-MILITARY",
+    "milit" : "DSCNT-GHO-CUST-DISCOUNT",
     "milit10" : "Military_10",
 }
 var parseArray= [];
