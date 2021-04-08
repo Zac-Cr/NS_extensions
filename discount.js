@@ -3,7 +3,7 @@ function insertmilitdscnt(text){
     setTimeout(function(){setdscnttype(text,k,"uir-machine-row-even");},1);
     setTimeout(function(){loopmilitinit(text);},3000);
 }
-function loopinit(text){
+function loopmilitinit(text){
     k++;
     if(k < document.getElementsByClassName("uir-machine-row-even").length){
         console.log("recalled"); 
