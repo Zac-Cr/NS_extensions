@@ -88,8 +88,9 @@ function seprecieved(){
 
 function getdiscount(){
     if(parseArray[0]== "milit" && parseArray[1] == 10){
+        console.log("milit if statment")
         var dsnttype = dsctdict["milit10"];
-        insertmilitdscnt(dsctdict);
+        insertmilitdscnt(dsnttype);
     }
     else{
         var dscntamt = `-${parseArray[1]}%`;
