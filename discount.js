@@ -87,7 +87,7 @@ function seprecieved(){
 };
 
 function getdiscount(){
-    if(parseArray[0]=== "milit" && parseArray[1] == 10){
+    if(parseArray[0]== "milit" && parseArray[1] == 10){
         var dsnttype = dsctdict["milit10"];
         insertmilitdscnt(dsctdict);
     }
