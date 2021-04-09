@@ -20,6 +20,10 @@ function changeinput(){
         document.getElementById('submit').className='unhidden';
   
       break;
+      case "tire":
+        document.getElementById('submit').className='unhidden';
+  
+      break;
       case 'rma_cust':
         rmainpt.className ="unhidden";
         document.getElementById('submit').className='unhidden';

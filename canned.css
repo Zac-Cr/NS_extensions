@@ -25,8 +25,14 @@ option{
 }
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.warning_txt {
+    color: white;
+    font-size: 10px;
+    text-align: center;
 }
 .header img{
     height: 25px;
@@ -84,4 +90,9 @@ input::placeholder{
 button{
     margin: 0;
 
+}
+#number_text{
+    text-align: center;
+    color: white;
+    font-size: 10px;
 }

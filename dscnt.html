@@ -10,13 +10,19 @@
     <div class="body_wrapper">
         <div class="header">
             <img src="img/logo.png" alt="Backcountry">
+            <div class="warning_txt">
+                <p>This needs to be on the NS page that you want to edit</p>
+            </div>
         </div>
         <select name="dscnt_list" id="dscnt_list" class="selection">
             <option value="">Select Discount</option>
             <option value="cust_sat">Customer Satisfaction</option>
             <option value="milit">Military</option>
         </select>
-        <input type="text" id="cstm" class="hddn"> 
+        <div>
+            <p class="hddn" id="number_text">Just put 5 or 10 no - or %</p>
+            <input type="number" id="cstm" class="hddn"> 
+        </div>
         <div class="button_wrapper">
             <button id="submit_dsc" class="hddn buttoncl">Submit</button>
         </div>       

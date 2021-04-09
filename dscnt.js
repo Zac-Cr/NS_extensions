@@ -4,15 +4,18 @@ function changeinput(){
       switch(dscnt.value){
         case "cust_sat":
             custinpt.className= "unhidden";
+            document.getElementById("number_text").className="unhidden";
             document.getElementById('submit_dsc').className='unhidden';
 
             break;
         case 'milit':
             custinpt.className ="unhidden";
+            document.getElementById("number_text").className="unhidden";
             document.getElementById('submit_dsc').className='unhidden';
 
             break;
         case '':
+            document.getElementById("number_text").className="hddn";
             document.getElementById('submit_dsc').className='hddn';
             break;
         }

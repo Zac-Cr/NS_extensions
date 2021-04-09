@@ -87,13 +87,13 @@ function seprecieved(){
 };
 
 function getdiscount(){
-    if(parseArray[0]== "milit" && parseArray[1] == 10){
+    if(parseArray[0]== "milit" && Math.abs(parseArray[1]) == 10){
         console.log("milit if statment")
         var dsnttype = dsctdict["milit10"];
         insertmilitdscnt(dsnttype);
     }
     else{
-        var dscntamt = `-${parseArray[1]}%`;
+        var dscntamt = `-${Math.abs(parseArray[1])}%`;
         console.log("get");
         console.log(dscntamt);
         var dsnttype = dsctdict[parseArray[0]];
