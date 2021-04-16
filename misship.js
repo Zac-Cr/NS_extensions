@@ -40,6 +40,7 @@ function unhide(){
             repl.className="unhidden";
             auth.className="unhidden";
             document.getElementById("submit_mssh").className = "unhidden";
+            break;
         case '':
             orig.className = "hddn";
             repl.className = "hddn";
