@@ -35,6 +35,11 @@ function unhide(){
             document.getElementById("submit_mssh").className = "unhidden";
 
             break;
+        case 'dmg':
+            orig.className="unhidden";
+            repl.className="unhidden";
+            auth.className="unhidden";
+            document.getElementById("submit_mssh").className = "unhidden";
         case '':
             orig.className = "hddn";
             repl.className = "hddn";
@@ -68,7 +73,12 @@ function getmessage(){
         \n
         SO: #${messageArray[1]}\n
         Replacement SO: #${messageArray[2]}\n
-        Return Authorization: #${messageArray[3]}`
+        Return Authorization: #${messageArray[3]}`,
+        "dmg": `Misship-Damaged Item\n
+        \n
+        SO: #${messageArray[1]}\n
+        Replacement SO: #${messageArray[2]}\n
+        Return Authorization: #${messageArray[3]}`,
     }
     coppiedtextglobal= messages[messageArray[0]];
     copyttext();
