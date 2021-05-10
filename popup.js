@@ -69,6 +69,7 @@ function getinputval(){
     * This is a free and complimentary label\n
     * Returns typically take 1-5 business days to process once they arrive back to us, although they can take longer during peak times\n
     * Once your return has been processed, we will send you an email letting you know\n
+    * All items should be in NEW and UNUSED condition. any sign of use or installation will be returned and charged\n
     The label has a tracking number included on it. Please note down this tracking number to keep track of your packages status!\n
     Thank you,\n
     `,
