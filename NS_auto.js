@@ -29,10 +29,10 @@ function SetCatnSource(){
 
 function Setshipping(){
     if(Cat== "go"){
-        document.getElementById("inpt_shipmethod12").title="UPS Ground";
-        document.getElementById("inpt_shipmethod12").value="UPS Ground";
-        document.getElementById("hddn_shipmethod12").value="6135455";
-        document.getElementById("indx_shipmethod12").value="15";
+        document.getElementById("inpt_shipmethod11").title="UPS Ground";
+        document.getElementById("inpt_shipmethod11").value="UPS Ground";
+        document.getElementById("hddn_shipmethod11").value="6135455";
+        document.getElementById("indx_shipmethod11").value="15";
         // set amount to free
         document.getElementById("shippingcost").value="0.00";
         document.getElementById("shippingcost").dispatchEvent(eve);
