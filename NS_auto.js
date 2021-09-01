@@ -1,4 +1,10 @@
 const eve = new Event("change");
+if(document.getElementsByClassName("uir-record-type")[0].innerText== "Return Authorization"){
+    document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
+    document.getElementById("hddn_customform1").value = "122";
+    document.getElementById("indx_customform1").value = "1";
+    document.getElementById("hddn_customform1").dispatchEvent(eve);
+};
 
 function SetCatnSource(){
     // try{
@@ -40,7 +46,12 @@ function Setshipping(){
         document.getElementById("shippingcost_formattedValue").dispatchEvent(eve);
         console.log("this changed the shipping");
         document.getElementById("shippingtxt").removeEventListener("click", Setshipping);
-
+        // Avatax setting
+        document.getElementById("inpt_shippingtaxcode14").title="AVATAX";
+        document.getElementById("inpt_shippingtaxcode14").value="AVATAX";
+        document.getElementById("hddn_shippingtaxcode14").value="6156581";
+        document.getElementById("indx_shippingtaxcode14").value="2";
+        document.getElementById("hddn_shippingtaxcode14").dispatchEvent(eve);
     };
 };
 
