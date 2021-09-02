@@ -1,5 +1,6 @@
 const eve = new Event("change");
-if(document.getElementsByClassName("uir-record-type")[0].innerText== "Return Authorization"){
+if(document.getElementsByClassName("uir-record-type")[0].innerText == "Return Authorization"){
+    if(document.getElementsByClassName("uir-record-id")[0].innerHTML == "")
     document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
     document.getElementById("hddn_customform1").value = "122";
     document.getElementById("indx_customform1").value = "1";
