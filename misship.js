@@ -60,23 +60,20 @@ function getmessage(){
         SO: #${messageArray[1]}
         Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
-        "shrt":`Misship-Shortship
+        "shrt":`Misship-Shortship\n
         SO: #${messageArray[1]}
         Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
         "ovr":`Misship-Overship\n
-        \n
-        SO: #${messageArray[1]}\n
+        SO: #${messageArray[1]}
         Return Authorization: #${messageArray[3]}`,
         'shplst': `Misship-Shipper Lost\n
-        \n
-        SO: #${messageArray[1]}\n
-        Replacement SO: #${messageArray[2]}\n
+        SO: #${messageArray[1]}
+        Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
         "dmg": `Misship-Damaged Item\n
-        \n
-        SO: #${messageArray[1]}\n
-        Replacement SO: #${messageArray[2]}\n
+        SO: #${messageArray[1]}
+        Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
     }
     coppiedtextglobal= messages[messageArray[0]];
