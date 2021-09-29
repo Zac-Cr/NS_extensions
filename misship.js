@@ -57,14 +57,12 @@ function getmessage(){
     messageArray.push(document.getElementById("return_auth").value); 
     var messages ={
         "wrng": `Misship-Wrong Item Sent\n
-        \n
-        SO: #${messageArray[1]}\n
-        Replacement SO: #${messageArray[2]}\n
+        SO: #${messageArray[1]}
+        Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
-        "shrt":`Misship-Shortship\n
-        \n
-        SO: #${messageArray[1]}\n
-        Replacement SO: #${messageArray[2]}\n
+        "shrt":`Misship-Shortship
+        SO: #${messageArray[1]}
+        Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
         "ovr":`Misship-Overship\n
         \n
