@@ -41,6 +41,12 @@ function unhide(){
             auth.className="unhidden";
             document.getElementById("submit_mssh").className = "unhidden";
             break;
+        case'FFE':
+            orig.className="unhidden";
+            repl.className="unhidden";
+            auth.className="unhidden";
+            document.getElementById("submit_mssh").className = "unhidden";
+            break;
         case '':
             orig.className = "hddn";
             repl.className = "hddn";
@@ -72,6 +78,10 @@ function getmessage(){
         Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,
         "dmg": `Misship-Damaged Item\n
+        SO: #${messageArray[1]}
+        Replacement SO: #${messageArray[2]}
+        Return Authorization: #${messageArray[3]}`,
+        "FFE": `Free First Exchange\n
         SO: #${messageArray[1]}
         Replacement SO: #${messageArray[2]}
         Return Authorization: #${messageArray[3]}`,

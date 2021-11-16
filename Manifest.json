@@ -1,7 +1,7 @@
   
 {
     "name": "NS_Extension",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "manifest_version": 2,
     "content_scripts":[
       {
