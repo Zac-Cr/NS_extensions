@@ -60,6 +60,7 @@ function getinputval(){
     var messages={
     "rma_free" : `Hey!\n
     Return Number (RMA):${messageArray[1]}\n
+    Please give link 10-15 min to generate label
     Label:${messageArray[2]}\n
     To return your order using our label, please write your RMA number on the outside of the package, print our UPS Return Label and drop your package at a UPS Facility or with a UPS Driver.
     \n
@@ -85,7 +86,7 @@ function getinputval(){
     "rma_stnd" : `Hey!\n
     
     Return Number (RMA):${messageArray[1]}\n
-    
+    Please give link 10-15 min to generate label
     Label:${messageArray[2]}\n
     
     To return your order using our label, please write your RMA number on the outside of the package, print our UPS Return Label and drop your package at a UPS Facility or with a UPS Driver.
