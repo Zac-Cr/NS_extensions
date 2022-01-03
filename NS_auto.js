@@ -5,11 +5,17 @@ if(document.getElementsByClassName("uir-record-type")[0].innerText == "Return Au
         console.log("rma already made")
     }
     catch{
-        document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
-        document.getElementById("hddn_customform1").value = "122";
-        document.getElementById("indx_customform1").value = "1";
-        document.getElementById("hddn_customform1").dispatchEvent(eve);
-    }
+        if(confirm("Is this a credit transaction")){
+            document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
+            document.getElementById("hddn_customform1").value = "122";
+            document.getElementById("indx_customform1").value = "1";
+            document.getElementById("hddn_customform1").dispatchEvent(eve);
+        }else 
+            break;
+        }
+
+    // Can have it seen as every Return authorizatoin made make google alert cash or credit depedning on selection makes the following selection on page 
+
 };
 
 function SetCatnSource(){
