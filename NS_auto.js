@@ -1,22 +1,20 @@
 const eve = new Event("change");
-if(document.getElementsByClassName("uir-record-type")[0].innerText == "Return Authorization"){
-    try{
-        document.getElementsByClassName("uir-record-id")[0].innerHTML
-        console.log("rma already made")
-    }
-    catch{
-        if(confirm("Is this a credit transaction")){
-            document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
-            document.getElementById("hddn_customform1").value = "122";
-            document.getElementById("indx_customform1").value = "1";
-            document.getElementById("hddn_customform1").dispatchEvent(eve);
-        }else 
-            break;
-        }
+// if(document.getElementsByClassName("uir-record-type")[0].innerText == "Return Authorization"){
+//     try{
+//         document.getElementsByClassName("uir-record-id")[0].innerHTML
+//         console.log("rma already made")
+//     }
+//     catch{
+//         if(confirm("Is this a credit transaction")){
+//             document.getElementById("inpt_customform1").value = "BC Return Authorization - Credit";
+//             document.getElementById("hddn_customform1").value = "122";
+//             document.getElementById("indx_customform1").value = "1";
+//             document.getElementById("hddn_customform1").dispatchEvent(eve);
+//         }
+//     }
+//     // Can have it seen as every Return authorizatoin made make google alert cash or credit depedning on selection makes the following selection on page 
 
-    // Can have it seen as every Return authorizatoin made make google alert cash or credit depedning on selection makes the following selection on page 
-
-};
+// };
 
 function SetCatnSource(){
     // try{
@@ -47,10 +45,10 @@ function SetCatnSource(){
 
 function Setshipping(){
     if(Cat== "go"){
-        document.getElementById("inpt_shipmethod11").title="UPS Ground";
-        document.getElementById("inpt_shipmethod11").value="UPS Ground";
-        document.getElementById("hddn_shipmethod11").value="6135455";
-        document.getElementById("indx_shipmethod11").value="15";
+        document.getElementById("inpt_shipmethod13").title="UPS Ground";
+        document.getElementById("inpt_shipmethod13").value="UPS Ground";
+        document.getElementById("hddn_shipmethod13").value="6135455";
+        document.getElementById("indx_shipmethod13").value="15";
         // set amount to free
         document.getElementById("shippingcost").value="0.00";
         document.getElementById("shippingcost").dispatchEvent(eve);
