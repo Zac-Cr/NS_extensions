@@ -57,11 +57,12 @@ function Setshipping(){
         console.log("this changed the shipping");
         document.getElementById("shippingtxt").removeEventListener("click", Setshipping);
         // Avatax setting
-        document.getElementById("inpt_shippingtaxcode14").title="AVATAX";
-        document.getElementById("inpt_shippingtaxcode14").value="AVATAX";
-        document.getElementById("hddn_shippingtaxcode14").value="6156581";
-        document.getElementById("indx_shippingtaxcode14").value="2";
-        document.getElementById("hddn_shippingtaxcode14").dispatchEvent(eve);
+        document.getElementById("inpt_shippingtaxcode15").title="AVATAX";
+        document.getElementById("inpt_shippingtaxcode15").value="AVATAX";
+        document.getElementById("hddn_shippingtaxcode15").value="6156581";
+        document.getElementById("indx_shippingtaxcode15").value="2";
+        document.getElementById("hddn_shippingtaxcode15").dispatchEvent(eve);
+
     };
 };
 
