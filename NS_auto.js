@@ -45,10 +45,10 @@ function SetCatnSource(){
 
 function Setshipping(){
     if(Cat== "go"){
-        document.getElementById("inpt_shipmethod13").title="UPS Ground";
-        document.getElementById("inpt_shipmethod13").value="UPS Ground";
-        document.getElementById("hddn_shipmethod13").value="6135455";
-        document.getElementById("indx_shipmethod13").value="15";
+        document.getElementById("inpt_shipmethod12").title="UPS Ground";
+        document.getElementById("inpt_shipmethod12").value="UPS Ground";
+        document.getElementById("hddn_shipmethod12").value="6135455";
+        document.getElementById("indx_shipmethod12").value="15";
         // set amount to free
         document.getElementById("shippingcost").value="0.00";
         document.getElementById("shippingcost").dispatchEvent(eve);
@@ -62,7 +62,13 @@ function Setshipping(){
         document.getElementById("hddn_shippingtaxcode15").value="6156581";
         document.getElementById("indx_shippingtaxcode15").value="2";
         document.getElementById("hddn_shippingtaxcode15").dispatchEvent(eve);
-
+    };
+//Auto adjust shipping if its standard to ups ground
+    if(Cat != "go" ||  document.getElementById("indx_shipmethod12").value == 4){
+        document.getElementById("inpt_shipmethod12").title="UPS Ground";
+        document.getElementById("inpt_shipmethod12").value="UPS Ground";
+        document.getElementById("hddn_shipmethod12").value="6135455";
+        document.getElementById("indx_shipmethod12").value="15";
     };
 };
 
