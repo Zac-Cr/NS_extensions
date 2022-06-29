@@ -64,7 +64,7 @@ function Setshipping(){
         document.getElementById("hddn_shippingtaxcode15").dispatchEvent(eve);
     };
 //Auto adjust shipping if its standard to ups ground
-    if(Cat != "go" ||  document.getElementById("indx_shipmethod12").value == 4){
+    if(Cat != "go" &&  document.getElementById("indx_shipmethod12").value == 4){
         document.getElementById("inpt_shipmethod12").title="UPS Ground";
         document.getElementById("inpt_shipmethod12").value="UPS Ground";
         document.getElementById("hddn_shipmethod12").value="6135455";
